@@ -3,7 +3,7 @@ Demo Application to demonstrate NodeJS Redis integration and Mysql 5.7 with Dock
 
 # Run Docker compose file
  docker-compose up
-#Run nodejs localy
-npm start
+# Run nodejs localy
+  npm start
 
 
