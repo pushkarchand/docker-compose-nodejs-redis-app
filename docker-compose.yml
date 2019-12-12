@@ -2,7 +2,12 @@ version: '3'
 services:
   redis-server: 
     image: 'redis'
-  node-app:
-    build: .
     ports:
-      - "4001:8081"
+      - "6380:6379"
+  mysql-development:
+    image: mysql:5.7.28
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test
+    ports:
+      - "3308:3306"
